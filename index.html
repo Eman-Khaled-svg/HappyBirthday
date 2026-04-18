@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <title>Happy BirthDay Eng/Rehab</title>
+</head>
+
+<body>
+   <!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <canvas class="petals-canvas" id="petals"></canvas>
+  <div class="hero-content">
+    <div class="hero-badge"><i class="fa-solid fa-heart" style="color:red"></i> Happy Birthday!</div>
+    <h1 class="hero-name">Eng / Rehab</h1>
+    <p class="hero-sub"><i class="fa-solid fa-star" style="color:#D97706"></i> Our dear teacher — the light and joy of the class</p>
+    <div class="hero-message">
+      <p>We will always make you proud<br>and you will always have a special place in our hearts 💜</p>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll Down</div>
+</section>
+ 
+<!-- ===== NAV ===== -->
+<nav class="sticky-nav">
+  <button class="nav-btn active" onclick="switchTab('photos', this)">
+    <i class="fa-solid fa-camera"></i> Photos
+  </button>
+  <button class="nav-btn" onclick="switchTab('messages', this)">
+    <i class="fa-solid fa-message"></i> Messages
+  </button>
+</nav>
+ 
+<!-- ===== PHOTOS TAB ===== -->
+<div id="tab-photos" class="tab-content active">
+  <div class="section">
+    <div class="section-header">
+      <h2>Our Memories</h2>
+      <p>Every photo tells a story 🌸</p>
+    </div>
+    <div class="photos-grid" id="photosGrid"></div>
+  </div>
+</div>
+ 
+<!-- ===== MESSAGES TAB ===== -->
+<div id="tab-messages" class="tab-content">
+  <div class="section">
+    <div class="section-header">
+      <h2>Messages from the Heart</h2>
+      <p>Every word reaches you with all our love</p>
+    </div>
+ 
+    <div class="messages-list" id="messagesList">
+      <div class="msg-bubble">
+        <div class="msg-author">💜 Eman</div>
+        <div class="msg-text">حضرتك افضل معلمه لينا وشكرا لحضرتك علي التعب الى بتبذليه علشان احنا ننجح</div>
+      </div>
+      <div class="msg-bubble">
+        <div class="msg-author">💜 Rahma</div>
+        <div class="msg-text">كل سنة وانتي طيبة يا أحلى وأجمل بشمهندسة في الدنيا يا عسولة يا قمراية يا سكر انتي 🤍 النهارده مش يوم عادي أبدًا النهارده عيد ميلاد أحلى وأرق وألطف بنت، عيد ميلاد القمر اللي بينور الدنيا كلها بضحكته وروحه الحلوة. بجد وجودك في حياة أي حد نعمة كبيرة لأنك إنسانة جميلة بكل معنى الكلمة. عيد ميلاد سعيد يا أحلى بشمهندسة رحووبه 🎂👑🤍✨</div>
+      </div>
+      <div class="msg-bubble">
+        <div class="msg-author">💜 Majesty</div>
+        <div class="msg-text">بشمهندسة قلبيييييي، مش عارفة ازاي بس لعبت في شفرة دماغي خلتني مش عارفة احب حد قدها، عموماً مفيش كلمات كفاية تعبر عن حبي ليها وهي حلوة قد ايه، كل سنة وحضرتك طيبة يا احلى هندسة فالدنيا 🫶</div>
+      </div>
+      <div class="msg-bubble">
+        <div class="msg-author">💜 Menna</div>
+        <div class="msg-text">كل سنه وحضرتك طيبه يا بشمهندسه وتعيشي لكل سنه ومن نجاح لنجاح دايما 🤍🤍</div>
+      </div>
+      <div class="msg-bubble">
+        <div class="msg-author">💜 Abdulrahman Ahmed</div>
+        <div class="msg-text">كل سنه وحضرتك طيبه يا هندسه وانشاءالله سنه خير ع حضرتك وتحققي كل اللي نفسك فيه، من احسن البشمهندسين اللي قابلتهم 🌸</div>
+      </div>
+      <div class="msg-bubble">
+        <div class="msg-author">💜 Nour</div>
+        <div class="msg-text">بشمهندسة، حابة أشكرك جدًا على مجهودك الكبير معانا، بجد طريقتك في الشرح بتسهّل علينا حاجات كتير في البرمجة، وصبرك علينا فرق معانا جدًا وخلى التعلم أحسن بكتير، ربنا يديكي الصحة ويجازيكي خير على تعبك 😍 وكل السنين وحضرتك طيبه 💘</div>
+      </div>
+      <div class="msg-bubble">
+        <div class="msg-author">💜 Bassant</div>
+        <div class="msg-text">كل سنه و احلى بشمهندسه بخير، بجد كتكوته كده في نفسك، يارب تحققي كل اللي نفسك فيه ونشوفك احلى عروسه ومتنسيش تعزمينا 🫵🏻✨♥</div>
+      </div>
+      <div class="msg-bubble">
+        <div class="msg-author">💜 Mahmoud Samir</div>
+        <div class="msg-text">كل سنه وحضرتك طيبه، سنه سعيده 🌷</div>
+      </div>
+      <div class="msg-date" style="text-align:center; font-size:13px; color:var(--purple-main); margin-top:8px;">
+        Happy birthday my favourite teacher! 🎂
+      </div>
+    </div>
+ 
+ 
+  </div>
+</div>
+ 
+<!-- ===== FOOTER ===== -->
+<footer>
+  Made with <span><i class="fa-solid fa-heart"></i></span> as a gift for you, Rehab — from your students who love you
+</footer>
+</body>
+<script src="./script.js"></script>
+
+</html>
